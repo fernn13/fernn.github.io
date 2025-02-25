@@ -1,0 +1,90 @@
+@media screen and (max-width: 1200px) {
+    p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+
+    /*Burger*/
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle-burger .line-1 {
+        transform: rotate(-45deg) translate(-5px, 7px);
+    }
+    .toggle-burger .line-2 {
+        opacity: 0;
+    }
+    .toggle-burger .line-3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    /*nav*/
+    nav {
+        position: fixed;
+        width: 30%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background: #ffffff;
+        border-left: 1px solid #eaeaea;
+        z-index: 9;
+        transform: translateX(100%);
+        transition: .3s ease-in-out;
+    }
+    nav ul {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    /* index */
+    .parallax #text {
+        font-size: 3rem;
+    }
+    .parallax img {
+        padding-top: 30rem;
+    }
+    .sec {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+     /* index */
+     .parallax #text {
+        font-size: 1.5rem;
+    }
+     .parallax img {
+        padding-top: 50rem;
+    }
+
+    #daftar {
+        padding: 20px;
+        margin-top: 25%;
+        margin-bottom: 2%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    select {
+        margin-bottom: 10px;
+    }
+}

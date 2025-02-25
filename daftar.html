@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./gambar/Icon.png">
+        <title>Register</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+    </head>
+
+    <body>
+       
+        <header>
+            <h2 class="logo">
+                <a href="./index.html">Fernn</a>
+            </h2>
+                <div class="nav">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="./hobby.html">Hobby</a>
+                            </li>
+                            <li>
+                                <a href="/schedule.html">Schedule</a>
+                            </li>
+                            <li>
+                                <a href="./aboutme.html">About Me</a>
+                            </li>
+                            <li>
+                                <a href="daftar.html" class="active">Daftar</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="burger">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                        <div class="line-3"></div>
+                    </div>
+                </div>
+        </header>
+    <section id="daftar">
+        <div class="form">
+            <h2>Form Pendaftaran</h2>
+                <form name="submit-to-google-sheet">
+                    <label for="first">Nama Depan:</label>
+                    <input
+                        type="text"
+                        id="first"
+                        name="first"
+                        required
+                    />
+     
+                    <label for="last">Nama Belakang:</label>
+                    <input
+                        type="text"
+                        id="last"
+                        name="last"
+                        required
+                    />
+     
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    />
+     
+                    <label for="password">Password:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$"
+                        title="Kata sandi harus mengandung setidaknya satu angka,
+                            satu huruf, satu simbol, dan panjangnya minimal 8 karakter"
+                        required
+                    />
+     
+                    <label for="repassword">Ulangi Password:</label>
+                    <input
+                        type="password"
+                        id="repassword"
+                        name="repassword"
+                        required
+                    />
+     
+                    <label for="mobile">Contact:</label>
+                    <input
+                        type="text"
+                        id="mobile"
+                        name="mobile"
+                        maxlength="13"
+                        required
+                    />
+     
+                    <label for="gender">Jenis Kelamin:</label>
+                    <select
+                        id="gender"
+                        name="gender"
+                        required
+                    >
+                        <option value="male">
+                            Laki-Laki
+                        </option>
+                        <option value="female">
+                            Perempuan
+                        </option>
+                    </select>
+     
+                    <button type="submit">
+                        Submit
+                    </button>
+    
+                    <button type="reset">
+                        Reset
+                    </button>
+                    <span id="success"></span>
+                </form>
+            </div>
+    </section>
+        <footer>
+            <div class="footer"></div>
+            <p>&#169; 2024 - Copyright by Fernn</p>
+        </footer>
+<script src="./js/main.js"></script>
+    </body>
+</html>
+
+
